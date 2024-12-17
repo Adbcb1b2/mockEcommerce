@@ -1,0 +1,789 @@
+/* Import google font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap');
+
+/* Default styles and box model */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Set the font family for the whole document */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styles for the navigation bar */
+.nav {
+    position: fixed; /* Keep nav bar at the top of the page */
+    top: 0; 
+    background: #023047;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 1000;
+}
+
+/* Styles for navigation links*/
+.nav ul {
+    list-style-type: none; /* Get rid of the hyperlink */
+    display: flex;
+}
+
+
+/* Styles for each list item  - gives a gap between them */
+.nav ul li {
+    margin: 0 10px;
+}
+
+/* Styles for the links */
+.nav ul li a {
+    color: #fb8500;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Change the background and text colour when nav options are hovered over*/
+.nav ul li a:hover {
+    background: #8ECAE6;
+    color: #023047;
+    font-weight: bolder;
+    transform: scale(1.05);
+
+}
+
+/* Highlighted button style, showing the page user is currently on */
+.nav ul li a.highlighted_button {
+    background: #fb8500;
+    color: #023047;
+}
+
+
+.nav ul li a.highlighted_button:hover{
+    background: #8ECAE6;
+    color: #023047;
+    font-weight: bolder;
+    transform: scale(1.05);
+
+}
+
+/*Turn button light blue to demonstrate which page you're on*/
+nav ul li a.current_page{
+    background: #8ECAE6;
+    color: #023047;
+    font-weight: bolder;
+}
+
+
+/* Styles for  strip holding page title*/
+.category_header {
+    background-color:#8ECAE6;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px; /* to match the height of the nav-bar*/
+    color: #001b38;
+    position: top;
+}
+
+/* Make image container pop out when hovered (homepage) */
+.image-and-category:hover {
+    transform: scale(1.05);
+}
+
+/* Styles for the image container, add spacing and a border (homepage)*/
+.image-and-category{
+    padding: 20px;
+    border: solid 2px #8ECAE6;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Stylees for text in the image container(homepage)*/
+.home-images p{
+    font-size: 48px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles for the whole footer */
+.footer {
+    background-color: #023047;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles for text in the footer*/
+.footer p {
+    margin-bottom: 10px;
+    color:#8ECAE6;
+    font-weight: bolder;
+}
+
+/* Styles for social media icons in the footer*/
+.social-icon {
+    display: inline-block;
+    margin: 0 5px;
+    color: #8ECAE6;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Change colour when hovering over social media icons*/
+.social-icon:hover {
+    color: #fb8500;
+    transform: scale(1.05);
+
+}
+
+/* Styles for containter holding the products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Styles for container holding individual product details */
+.product {
+    width: calc(50% - 20px);
+    margin: 0 auto 20px; 
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid 2px #8ECAE6;
+    padding: 10px;
+}
+
+/* Styles for the images in the individual products - fill the width of the container*/
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+
+/* Make products pop out when hovered over*/
+.product:hover{
+    transform: scale(1.05);
+
+}
+
+/* Style for the name of the project*/
+.product h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Make product name and description the same colour*/
+h3, p{
+    color: #001b38;
+}
+
+/*Style for the add to basket button*/
+.product button {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #fb8500;
+    color: #023047;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+/* Change colour when the add to basket button is hovered over*/
+.product button:hover {
+    background: #8ECAE6;
+    color: #023047;
+    font-weight: bolder;
+    transform: scale(1.05);
+
+}
+
+/*Styles for individual basket items, black bottom border to separate */
+.basket-item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* styles for images in the basket */
+.basket-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Basket item details styles */
+.item-details {
+    flex: 1;
+}
+
+/* Style for item descriptions*/
+.item-details h3 {
+    margin-bottom: 5px;
+}
+
+/* Basket item details paragraph styles */
+.item-details p {
+    margin-bottom: 5px;
+}
+
+/* Quantity input styles */
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+}
+
+/* For the +/- buttons in the basket */
+.quantity button {
+    background-color: #fb8500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px; 
+}
+
+/* Change font colour/background colour when hovering over +/- buttons */
+.quantity button:hover {
+    color:#023047;
+    background-color: #8ECAE6;
+    transform: scale(1.05);
+
+}
+
+/* Add margin between the buttons */
+.quantity button + button {
+    margin-left: 5px;
+}
+
+/* Style the quantity input box */
+.quantity input {
+    width: 40px;
+    text-align: center;
+    padding: 4px; /* Add padding */
+    margin: 1px;
+}
+
+
+/*Remover button styles */
+.remove-btn {
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color:#fb8500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Style for remove button when it's hovered over */
+.remove-btn:hover {
+    background-color: red;
+    transform: scale(1.05);
+
+}
+
+/*Total price container for price to be dynamically inserted*/
+.total-container {
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 25px;
+}
+
+/*FAQ Button*/
+.faq-btn {
+    background-color: #fb8500; 
+    color: #023047;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* Change colour of the FAQ button when it's hovered over */
+.faq-btn:hover {
+    background-color: #8ECAE6; 
+}
+
+/* Main FAQ Body Styles */
+.main-faq-body {
+    margin-top: 20px; /* Add space beneath fixed navigation */
+    padding: 20px; /* Add padding for equal gap */
+}
+
+  
+/* Styles for FAQ  heading*/
+.faq-heading {
+    color: #023047;
+}
+   
+
+/* Style for FAQ question*/
+.faq {
+    margin-top: 20px;
+}
+
+/* Transition for pulsing checkout button*/
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Style for checkout buttons on basket and checkout pages */
+  .checkout-btn, .checkout-btn-final {
+    background-color: #fb8500;
+    color: #fff;
+    border: 5px solid #8ECAE6;
+    padding: 20px 40px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 25px 0 25px 0;
+    animation: pulse 2s infinite; /* Apply the pulse animation */
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  /* Delete placeholder when user clicked in the input field*/
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+
+  .checkout-btn a:visited {
+    color: inherit; /*Avoid turning text purple when button clicked*/
+}
+
+
+/* Style for basket icon */
+.basket-icon {
+    position: relative;
+    
+}
+
+/* Style for the basket icon shown on a smaller screen*/
+.basket-icon-mobile{
+    display: none;
+    padding-right: 20px;
+    top: -5px;
+    
+}
+/* Styles for the checkout form container */
+.checkout-form-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for the back button */
+.back-btn {
+    background-color: #023047;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.back-btn:hover {
+    background-color: #001b38;
+    transform: scale(1.05);
+
+}
+
+/* Styles for the checkout button */
+.checkout-btn, .checkout-btn-final {
+    background-color: #fb8500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite; /* Apply the pulse animation */
+
+}
+
+/* Styles for when a  checkout button is hovered over*/
+.checkout-btn:hover, .checkout-btn-final:hover  {
+    background-color:#8ECAE6;
+    color:#023047
+}
+
+/* Styles for the checkout form */
+.checkout-form {
+    max-width: 600px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding around the form */
+}
+
+/* Styles for form labels */
+.checkout-form label {
+    font-weight: bold;
+    color: #001b38;
+}
+
+/* Styles for form inputs */
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form input[type="tel"] {
+    width: 100%; /* Make input fields full width of container*/
+    padding: 10px; /* Add padding to input fields */
+    margin-bottom: 15px; /* Add spacing between input fields */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+/* Styles for the basket count (red circle) */
+.basket-count {
+    position: absolute;
+    top: -20px; /* Adjust position as */
+    right: -20px; /* Adjust position */
+    background-color: red; /* Background color for the count */
+    color: #fff; 
+    border-radius: 50%; /* Make it a circle */
+    padding: 7px; 
+    font-size: 12px; 
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+/* Body of the basket page*/
+.basket-container{
+    margin-top: 5px;
+}
+
+/* Styles for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="search"],
+input[type="url"],
+input[type="month"],
+input[type="week"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+
+}
+
+/* Style of error message displaying card is expired */
+.error-message{
+    color:red;
+}
+
+/* Popup styles*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; 
+    color: #001b38;
+    padding: 80px; 
+    border-radius: 20px; 
+    z-index: 999;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+/* Centrally align text in the popup*/
+.popup-content {
+    text-align: center;
+}
+
+/* Styles for text in the popup */
+.popup p {
+    margin: 0;
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #001b38; 
+}
+
+
+.popup i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Styles for the icon in the popup */
+.popup i.fa-exclamation-triangle {
+    color: #fb8500; /* Change icon to match colour theme */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+    label {
+        color: #fb8500;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    /* Styles for menu container */
+    .menu-btn {
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* Style for the basket icon on a mobile device*/
+    .basket-icon-mobile {
+        display: block;
+        margin-right: 10px;
+        top: 2px;
+        color: #fb8500;
+        position: relative; /* Ensure the basket icon is positioned relative */
+    }
+
+
+    /*Styles for the basket count on smaller screens */
+    .basket-count-mobile {
+        position: absolute;
+        top: -5px;
+        right: 12px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        padding: 5px 5px 5px 5px;
+        font-weight: bold;
+
+    }
+
+     /* Style for the basket icon on a mobile device*/
+    .basket-icon-mobile a{
+        color:#fb8500;
+        font-size: 24px;
+        
+    }
+
+    /* Styles for menu button */
+    .menu-btn__burger {
+        margin-top: 7px;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    /*Style the lines for the burger menu*/
+    .line {
+        width: 100%;
+        height: 3px;
+        background-color: #fb8500;
+    }
+
+    /* Hide navigation links for mobile */
+    .nav ul {
+        display: none;
+    }
+
+    /*Adjust navigation alignment for mobile */
+    .nav {
+        justify-content: space-between;
+    }
+
+    /* Show active navigation links for mobile */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #023047;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+
+    /* Adjust styles for active navigation links on mobile */
+    .nav-links.active li {
+        text-align: center;
+        margin: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    /*Image container styles for mobile */
+    .image-container {
+        display: flex;
+        margin-top: 20px;
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    /*Image container styles for mobile */
+    .image-container img {
+        width: 100%; /* Make images fill the container */
+        max-width: 600px; /* Set maximum width for the images */
+        height: auto;
+        margin: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .nav {
+        justify-content: space-between; /* Ensures logo is aligned to the left and buttons are aligned to the right */
+    } 
+
+    .nav ul {
+        margin-left: auto; /* Pushes the navigation buttons to the right */
+    }
+
+    /* Adjust product width*/
+    .product {
+        width: calc(25% - 20px);
+    }
+
+    /*Logo styles for larger screens*/
+    .logo {
+        color: #fb8500;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    /*Image container styles for larger screens*/
+    .image-container {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: row;
+    }
+
+    /*Main FAQ body styles for larger screens*/
+    .main-faq-body {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    /*Styles for the faq container on larger screens*/
+    .faq-container {
+        background-color: #8ECAE6;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 20px; /* Add margin for equal gap */
+        width: calc(33.33% - 40px); /* Adjust width to fit 3 containers per row with space between them */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribute content evenly vertically */
+    }
+    
+    /*Styles for page title, leave a gap before faqs start*/
+    .faq-heading {
+        color: #023047;
+        margin-bottom: 20px; /* Add margin below heading */
+    }
+    
+    
+    .faq {
+        color: #001b38;
+        flex-grow: 1; /* Allow paragraph to grow to fill remaining space */
+    }
+    
+    .image-container img {
+        width: 100%; /* Make images fill the container */
+        max-width: 600px; /* Set maximum width for the images */
+        height: auto;
+        margin: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        padding: 20px;
+        
+    
+    }
+
+}
+
+/* Phone screen size */
+@media (max-width: 767px) {
+    .logo {
+        color: #fb8500;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* FAQ Container Styles */
+    .faq-container {
+        background-color: #8ECAE6;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 20px; /* Add margin for equal gap */
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .main-faq-body {
+        justify-content: space-between; /* Ensure equal space between columns */
+    }
+
+    .faq-container {
+        width: calc(50% - 40px); /* Set width to fit 2 containers per row with space between them */
+    }
+}

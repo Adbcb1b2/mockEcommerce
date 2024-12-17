@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tab title-->
+    <title>FAQs</title>
+    <!--Links to stylesheets-->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Tab logo -->
+    <link rel="icon" href="tab_logo.png" type="image/png">
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="nav">
+        <a href="ecommerce.html" class="logo">Ecommerce</a>
+
+        <!-- Navigation for larger screens-->
+        <ul class="nav-links">
+            <li><a href="ecommerce.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="clothing.html"><i class="fas fa-tshirt"></i> Clothing</a></li>
+            <li><a href="electronics.html"><i class="fas fa-laptop"></i> Electronics</a></li>
+            <li><a href="bathroom.html"><i class="fas fa-bath"></i> Bathroom</a></li>
+            <li><a href="faqs.html" class="current_page"><i class="fas fa-question-circle" style="color: #023047;"></i></i> FAQs</a></li>
+
+
+            <!--Basket button-->
+            <li>
+                <a href="basket.html" class="highlighted_button">
+                    <i class="fas fa-shopping-basket"></i> Basket 
+                    <!--For the basket count red circle -->
+                    <span class="basket-icon">
+                        <span class="basket-count">0</span>
+                    </span>
+                </a>
+            </li>
+
+        </ul>
+
+        <!--Navigation for smaller screens-->
+        <div class="menu-btn">
+            <div class="basket-icon-mobile">
+                <a href="basket.html" class="highlighted_button">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="basket-count-mobile">0</span>
+                </a>
+            </div>
+            <div class="menu-btn__burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main Content-->
+    <div class="main">
+        <!-- Page title-->
+        <h1 class="category_header">
+            <i class="fas fa-question-circle" style="color: #023047;"></i> FAQs
+        </h1>
+        <br> <!--Add a gap between the page title and the start of the faq container-->
+
+        <!--FAQ question & answer-->
+        <div class="main-faq-body">
+            <div class="faq-container">
+                <h1 class="faq-heading">
+                    <i class="fas fa-question-circle" style="color: #023047;"></i> <!--Question Mark-->
+                    Do you offer international shipping?
+                </h1>
+                <p class="faq">
+                    Sadly not at the moment, we ship to the UK only but this is something we will be looking into for the future.
+                </p>
+            </div>
+
+            <!--FAQ question & answer-->
+            <div class="faq-container">
+                <h1 class="faq-heading">
+                    <i class="fas fa-question-circle" style="color: #023047;"></i>
+                    Are there minimum order quantites?
+                </h1>
+                <p class="faq">
+                    No, we don't have a minimum order. You can order as little or as much as you like.
+                </p>
+            </div>
+
+            <!--FAQ question & answer-->
+            <div class="faq-container">
+                <h1 class="faq-heading">
+                    <i class="fas fa-question-circle" style="color: #023047;"></i>
+                    Can I track my order?
+                </h1>
+                <p class="faq">
+                    Once your order has been shipped, you will receive a tracking number via email. You can use this tracking number to monitor the status of your package.            
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <h1 class="faq-heading">
+                    <i class="fas fa-question-circle" style="color: #023047;"></i>
+                    How can I order more than one of each item?
+                </h1>
+                <p class="faq">
+                    You can either click the 'Add to Basket' button multiple times or you can go to your basket and do it from there.
+                </p>
+            </div>
+
+            <!--FAQ question & answer-->
+            <div class="faq-container">
+                <h1 class="faq-heading">
+                    <i class="fas fa-question-circle" style="color: #023047;"></i>
+                    How can I find your contact information?
+                </h1>
+                <p class="faq">
+                    Simply scroll to the bottom of the page to find it in the footer or see below:
+                    <br>Address: 123 Example Road, Cityville, Country
+                    <br>Phone: +447123456789
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <!--Copyright Section-->
+        <div class="footer_first">
+            <p>&copy; 2024 Kim Richards</p>
+        </div>
+        <!--Contact Details Section-->
+        <div class="footer_second">
+            <p>123 Example Road, Cityville, Country</p>
+            <p>Phone: +447123456789</p>
+        </div>
+        <br>
+        <!--Social Media Link Section-->
+        <div class="footer_third">
+            <!-- Social Media Icons -->
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!--Link to Javascript-->
+    <script src="script.js"></script>
+
+</body>
+</html>

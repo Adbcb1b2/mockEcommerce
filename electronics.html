@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Tab title-->
+        <title>eCommerce Site</title> 
+        <!--Links to stylesheets-->
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!--Tab logo -->
+        <link rel="icon" href="tab_logo.png" type="image/png">
+    </head>
+
+   <body>
+
+    <!--Navigation-->
+    <nav class="nav">
+        <a href="ecommerce.html" class="logo">Ecommerce</a>
+
+        <!-- Navigation for larger screens-->
+        <ul class="nav-links">
+            <li><a href="ecommerce.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="clothing.html"><i class="fas fa-tshirt"></i> Clothing</a></li>
+            <li><a href="electronics.html" class="current_page"><i class="fas fa-laptop"></i> Electronics</a></li>
+            <li><a href="bathroom.html"><i class="fas fa-bath"></i> Bathroom</a></li>
+            <li><a href="faqs.html" ><i class="fas fa-question-circle"></i></i> FAQs</a></li>
+
+
+            <!--Basket button-->
+            <li>
+                <a href="basket.html" class="highlighted_button">
+                    <i class="fas fa-shopping-basket"></i> Basket 
+                    <!--For the basket count red circle -->
+                    <span class="basket-icon">
+                        <span class="basket-count">0</span>
+                    </span>
+                </a>
+            </li>
+
+        </ul>
+
+        <!--Navigation for smaller screens-->
+        <div class="menu-btn">
+            <div class="basket-icon-mobile">
+                <a href="basket.html" class="highlighted_button">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="basket-count-mobile">0</span>
+                </a>
+            </div>
+            <div class="menu-btn__burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav> 
+
+    <!--Main Content - Items for sale-->
+    <div class="main">
+
+        <!--Page title-->
+        <h1 class="category_header">Electronics</h1>
+
+        <!--Div for products-->
+        <div class="products">
+
+            <!-- Div for product image, title, details, price, 'Add to Basket' button-->
+            <div class="product">
+                <!--Details-->
+                <img src="electronics1.jpg" alt="Mobile Phone" title="Mobile Phone - 50MP Camera. Colour: Black">
+                <h3 title="Mobile Phone - 50MP Camera. Colour: Black">Mobile Phone</h3>
+                <p>50MP Camera</p>
+                <p>Colour: Black</p>
+                <p>£500</p>
+                <button class="add-to-basket" data-name="Mobile Phone" data-price="500">Add to Basket</button>
+            </div>
+
+            <div class="product">
+                <img src="electronics2.jpg" alt="Laptop" title="Laptop - 13th Gen Intel® Core™ i7-1360P. Colour: Silver">
+                <h3 title="Laptop - 13th Gen Intel® Core™ i7-1360P Colour: Silver">Laptop</h3>
+                <p>13th Gen Intel® Core™ i7-1360P</p>
+                <p>Colour: Silver</p>
+                <p>£700</p>
+                <button class="add-to-basket" data-name="Laptop" data-price="700">Add to Basket</button>
+            </div>
+
+            <div class="product">
+                <img src="electronics3.jpg" alt="Headphones" title="Headphones - Side Controls. Colour: Black">
+                <h3 title="Headphones - Noise Cancelling, Side Controls. Colour: Black">Headphones</h3>
+                <p>Noise Cancelling, Side Controls</p>
+                <p>Colour: Black</p>
+                <p>£20</p>
+                <button class="add-to-basket" data-name="Headphones" data-price="20">Add to Basket</button>
+            </div>
+
+            <div class="product">
+                <img src="electronics4.jpg" alt="Monitor" title="Monitor - Curved, 24&quot; Display. Colour: Black">
+                <h3 title="Monitor - Curved, 24&quot; Display. Colour: Black">Monitor</h3>
+                <p>Curved, 24&quot; Display</p>
+                <p>Colour: Black</p>
+                <p>£200</p>
+                <button class="add-to-basket" data-name="Monitor" data-price="200">Add to Basket</button>
+            </div>
+
+            <div class="product">
+                <!--Details-->
+                <img src="electronics5.jpg" alt="Tablet" title="Tablet - 10.1&quot; Display. Colour: Black">
+                <h3 title="Tablet - 10.1&quot; Display. Colour: Black">Tablet</h3>
+                <p>10&quot; Display</p>
+                <p>Colour: Black</p>
+                <p>£300</p>
+                <button class="add-to-basket" data-name="Tablet" data-price="300">Add to Basket</button>
+            </div>
+            <div class="product">
+                <img src="electronics6.jpg" alt="Mouse" title="Mouse - With Side Buttons and Light. Colour: Black">
+                <h3 title="Mouse - With Side Buttons and Light. Colour: Black">Mouse</h3>
+                <p>With Side Buttons and Light</p>
+                <p>Colour: Black</p>
+                <p>£9.50</p>
+                <button class="add-to-basket" data-name="Mouse" data-price="9.50">Add to Basket</button>
+            </div>
+            <div class="product">
+                <img src="electronics7.jpg" alt="Keyboard" title="Keyboard - With Lights. Colour: Black">
+                <h3 title="Keyboard - With Lights. Colour: Black">Keyboard</h3>
+                <p>With Lights</p>
+                <p>Colour: Black</p>
+                <p>£15</p>
+                <button class="add-to-basket" data-name="Keyboard" data-price="15">Add to Basket</button>
+            </div>
+            <div class="product">
+                <img src="electronics8.jpg" alt="Extension Lead" title="Extension Lead - 4 Sockets. Colour: White">
+                <h3 title="Extension Lead - 4 Sockets. Colour: Black">Extension Lead</h3>
+                <p>4 Sockets</p>
+                <p>Colour: White</p>
+                <p>£5</p>
+                <button class="add-to-basket" data-name="Extension lead" data-price="5">Add to Basket</button>
+            </div>
+
+
+        </div>
+
+    </div>
+    
+    <!--Footer-->
+    <footer class="footer">
+        <!--Copyright Section-->
+        <div class="footer_first">
+            <p>&copy; 2024 Kim Richards</p>
+        </div>
+        <!--Contact Details Section-->
+        <div class="footer_second">
+            <p>123 Example Road, Cityville, Country</p>
+            <p>Phone: +447123456789</p>
+            <!-- FAQ Button -->
+            <br>
+            <a href="faqs.html" class="faq-btn">FAQs</a>
+        </div>
+        <br>
+
+        <!--Social Media Link Section-->
+        <div class="footer_third">
+            
+            <!-- Social Media Icons -->
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- Pop up for when 'Add to Basket' buttons are clicked-->
+    <div id="addedToBasketPopup" class="popup">
+        <!--Popup Content-->
+        <div class="popup-content">
+            <!--Text with Icon-->
+            <p><i class="fas fa-exclamation-triangle"></i> Added to basket!</p>
+        </div>
+    </div>
+
+   </body>
+
+    <!-- Link to Javascript file-->
+   <script src="script.js"></script>
+
+</html>

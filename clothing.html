@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Tab title-->
+        <title>eCommerce Site</title> 
+        <!--Links to stylesheets-->
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!--Tab logo -->
+        <link rel="icon" href="tab_logo.png" type="image/png">
+    </head>
+
+   <body>
+
+    <!-- Navigation-->
+    <nav class="nav">
+        <!--Page logo-->
+        <a href="ecommerce.html" class="logo">Ecommerce</a>
+
+        <!-- Navigation for larger screens-->
+        <ul class="nav-links">
+            <li><a href="ecommerce.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="clothing.html" class="current_page"><i class="fas fa-tshirt"></i> Clothing</a></li>
+            <li><a href="electronics.html"><i class="fas fa-laptop"></i> Electronics</a></li>
+            <li><a href="bathroom.html" ><i class="fas fa-bath"></i> Bathroom</a></li>
+            <li><a href="faqs.html" ><i class="fas fa-question-circle"></i></i> FAQs</a></li>
+
+
+            <!--Basket button-->
+            <li>
+                <a href="basket.html" class="highlighted_button">
+                    <i class="fas fa-shopping-basket"></i> Basket 
+                    <!--For the basket count red circle -->
+                    <span class="basket-icon">
+                        <span class="basket-count">0</span>
+                    </span>
+                </a>
+            </li>
+
+        </ul>
+
+        <!--Navigation for smaller screens-->
+        <div class="menu-btn">
+            <div class="basket-icon-mobile">
+                <a href="basket.html" class="highlighted_button">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="basket-count-mobile">0</span>
+                </a>
+            </div>
+            <div class="menu-btn__burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content - Items for sale -->
+    <div class="main">
+
+        <!-- Page title-->
+        <h1 class="category_header">Clothing</h1>
+
+        <!--Div for products-->
+        <div class="products">
+
+            <!-- Div for product image, title, details, price, 'Add to Basket' button-->
+            <div class="product">
+                <!--Details-->
+                <img src="clothing1.jpeg" alt="Men's Set" title="Men's Set - 1x T-shirt 1x Shorts. Colour: Black/Gold">
+                <h3 title="Men's Set - 1x T-shirt 1x Shorts. Colour: Black/Gold">Men's Set</h3>
+                <p>1x T-shirt 1x Shorts</p>
+                <p>Colour: Black/Gold</p>
+                <p>£17.50</p>
+                <button class="add-to-basket" data-name="Men's Set" data-price="17.50">Add to Basket</button>
+            </div>
+
+            <div class="product">
+                <img src="clothing2.jpg" alt="Woman's T-shirt" title="Woman's T-shirt - Logo T-shirt. Colour: White/Black">
+                <h3 alt="Woman's T-shirt" title="Woman's T-shirt - Logo T-shirt. Colour: White/Black">Woman's T-shirt</h3>
+                <p>Logo T-shirt</p>
+                <p>Colour: White/Black</p>
+                <p>£12</p>
+                <button class="add-to-basket" data-name="Woman's Tshirt" data-price="12">Add to Basket</button>
+            </div>
+
+            <div class="product">
+                <img src="clothing3.jpg" alt="Socks" title="Socks - 8 pack. Colour: Assorted">
+                <h3 title="Socks - 8 pack. Colour: Assorted">Socks</h3>
+                <p>9 pack</p>
+                <p>Colour: Assorted</p>
+                <p>£5</p>
+                <button class="add-to-basket" data-name="Socks" data-price="5">Add to Basket</button>
+            </div>
+
+            <div class="product">
+                <img src="clothing4.jpg" alt="Hat" title="Hat - Hat with Band. Colour: Beige/Black">
+                <h3 title="Hat - Hat with Band. Colour: Beige/Black">Hat</h3>
+                <p>Hat with Band</p>
+                <p>Colour: Beige/Black</p>
+                <p>£19</p>
+                <button class="add-to-basket" data-name="Hat" data-price="19">Add to Basket</button>
+            </div>
+            <div class="product">
+                <img src="clothing5.jpg" alt="Kid's Set" title="Kid's Set - Shorts and Tshirt. Colour: Beige">
+                <h3 title="Kid's Set - 1x T-shirt 1x Shorts. Colour: Beige">Kid's Set</h3>
+                <p>1x T-shirt 1x Shorts</p>
+                <p>Colour: Blue</p>
+                <p>£12.50</p>
+                <button class="add-to-basket" data-name="Kid's Set" data-price="12.50">Add to Basket</button>
+            </div>
+            <div class="product">
+                <img src="clothing6.jpg" alt="Woman's Leggings" title="Woman's Leggings - Superstretch. Colour: Camo">
+                <h3 alt="Woman's Leggings" title="Woman's Leggings - Superstretch. Colour: Camo">Woman's Leggings</h3>
+                <p>Leggings</p>
+                <p>Colour: Camo</p>
+                <p>£13.99</p>
+                <button class="add-to-basket" data-name="Woman's Leggings" data-price="13.99">Add to Basket</button>
+            </div>
+            <div class="product">
+                <img src="clothing7.jpg" alt="Men's Shirt" title="Men's Shirt - 1 pack. Colour: Red/Black">
+                <h3 title="Men's Shirt - 1 pack. Colour: Red/Black">Men's Shirt</h3>
+                <p>1 pack</p>
+                <p>Colour: Red/Black</p>
+                <p>£20</p>
+                <button class="add-to-basket" data-name="Men's Shirt" data-price="20">Add to Basket</button>
+            </div>
+            <div class="product">
+                <img src="clothing8.jpg" alt="Woman's Jeans" title="Woman's Jeans - Loose fit. Colour: Light Blue">
+                <h3 title="Woman's Jeans - Loose fit. Colour: Light Blue">Woman's Jeans</h3>
+                <p>Loose Fit</p>
+                <p>Colour: Light Blue</p>
+                <p>£27</p>
+                <button class="add-to-basket" data-name="Woman's Jeans" data-price="27">Add to Basket</button>
+            </div>
+
+
+            
+
+        </div>
+
+        
+
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <!--Copyright Section-->
+        <div class="footer_first">
+            <p>&copy; 2024 Kim Richards</p>
+        </div>
+        <!--Contact Details Section-->
+        <div class="footer_second">
+            <p>123 Example Road, Cityville, Country</p>
+            <p>Phone: +447123456789</p>
+            <!-- FAQ Button -->
+            <br>
+            <a href="faqs.html" class="faq-btn">FAQs</a>
+        </div>
+        <br>
+
+        <!--Social Media Link Section-->
+        <div class="footer_third">
+            
+            <!-- Social Media Icons -->
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- Pop up for when 'Add to Basket' buttons are clicked-->
+    <div id="addedToBasketPopup" class="popup">
+        <!--Popup Content-->
+        <div class="popup-content">
+            <!--Text with Icon-->
+            <p><i class="fas fa-exclamation-triangle"></i> Added to basket!</p>
+        </div>
+    </div>
+
+   </body>
+
+   <script src="script.js"></script>
+   
+</html>
